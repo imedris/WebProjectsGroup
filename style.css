@@ -1,0 +1,134 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+
+}
+
+.maincontent{
+	width: 100%;
+	height: 100vh;
+	padding-bottom: 100px;
+	background-image: url(images/background4.jpg);
+	background-size: cover;
+	overflow: hidden;
+	background-position: center;
+}
+
+.logo{
+	width: 170px;
+	margin-top: 40px;
+	cursor: pointer;
+}
+
+.navbar{
+	width: 85%;
+	height: 15%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto;
+}
+nav{
+	flex: 1;
+	color: white;
+	text-align: right;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 60px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 13px;
+}
+button{
+	padding: 10px 25px;
+	background: white;
+	cursor: pointer;
+	outline: none;
+	border: 1px solid white;
+	border-radius: 20px;
+
+}
+
+
+.content{
+	color: #fbfcfd;
+	position: absolute;
+	text-shadow: 3px 4px black;
+	top: 50%;
+	left: 8%;
+	z-index: 2;
+	transform: translateY(-50%);
+}
+h1{
+	font-size: 80px;
+	margin: 10 px 0 30px;
+	line-height: 80px;
+}
+.animations img{
+	width: 40px;
+	animation: animations 7s linear infinite;
+}
+.animations{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	bottom: -90px;
+}
+
+@keyframes animations{
+	0%{
+		transform: translateY(0);
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+		width: 50px;
+	}
+	70%{
+		opacity: 1;
+		width: 4%;
+	}
+	100%{
+		transform: translateY(-80vh);
+		opacity: 0;
+	}
+}
+
+.animations img:nth-child(1){
+	animation-delay: 2s;
+}
+.animations img:nth-child(2){
+	animation-delay: 4s;
+}
+.animations img:nth-child(3){
+	animation-delay: 7s;
+}
+.animations img:nth-child(4){
+	animation-delay: 1s;
+}
+.animations img:nth-child(5){
+	animation-delay: 5s;
+}
+.animations img:nth-child(6){
+	animation-delay: 7s;
+}
+.animations img:nth-child(7){
+	animation-delay: 5.5s;
+}
+
+
+#loader{
+	background: rgb(123, 74, 22) url(images/loader1.gif) no-repeat center;
+	background-size: 30%;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	z-index: 999;
+}
