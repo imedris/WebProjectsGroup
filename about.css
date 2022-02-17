@@ -1,0 +1,25 @@
+.h1{
+	padding-top: 170px;
+	 text-align: center;
+	 
+}
+
+main {
+  width: 100px;
+  height: 20px;
+
+  font-weight: bold;
+  position: relative;
+  animation: mymove 8s infinite;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 500px;}
+  to {left: 650px;}
+}
