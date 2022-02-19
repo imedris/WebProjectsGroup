@@ -1,0 +1,198 @@
+
+	
+/* cards styling*/ 	
+#cards {
+	margin:0 auto;
+	width:1080px;
+	float: center;
+	position:relative;
+	padding-top:20px;
+	}
+
+
+.h1{
+
+	 text-align: center;
+
+	 	margin:0 auto;
+	width:1080px;
+	float: center;
+	position:relative;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+	
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float 5 columns side by side */
+.column {
+  float: left;
+  width: 150px;
+  padding: 0 10px;
+}
+
+.row1 {
+	margin-left:180px;
+      padding-bottom:20px;
+	  float:center;
+}
+.row2 {
+	margin-left:180px;
+      padding-bottom:20px;
+	  float:center;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  .column {
+
+    display: block;
+    margin-bottom: 20px;
+  }
+
+
+/* Styling the cards */
+.card {
+	
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+    transition: 0.5s;
+	
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 #D3D3D3;
+
+}
+
+.container {
+  padding: 2px 16px;
+  color: black;
+}
+.slider{
+   border-radius: 35px; 	
+   overflow: hidden;
+   	margin:0 auto;
+	width:1080px;
+	float: center;
+	position:relative;
+}
+.images {
+    display: flex;
+    width: 100%;
+}
+.images img {
+    height: 300px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: #fff;}
+#img1:checked ~ .m1 {
+    margin-left: -80;
+}
+#img2:checked ~ .m2 {
+    margin-left: -90%;
+}
+#img3:checked ~ .m3 {
+    margin-right: -100%;
+}
+#img4:checked ~ .m4 {
+    margin-right: -70%;
+}
+
+
+.animations img{
+	width: 40px;
+	animation: animations 7.5s linear infinite;
+}
+.animations{
+		margin:0 auto;
+	width:1080px;
+	float: center;
+	position:relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+@keyframes animations{
+	0%{
+		transform: translateY(0);
+		opacity: 0;
+	}
+
+	15%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+		width: 50px;
+	}
+	70%{
+		opacity: 1;
+		width: 4%;
+	}
+	100%{
+		transform: translateY(-80vh);
+		opacity: 0;
+	}
+}
+
+.animations img:nth-child(1){
+	animation-delay: -0.1s;
+}
+.animations img:nth-child(2){
+	animation-delay: -2.4s;
+}
+.animations img:nth-child(3){
+	animation-delay: -5.1s;
+}
+.animations img:nth-child(4){
+	animation-delay: -3.16s;
+}
+.animations img:nth-child(5){
+	animation-delay: -2.1s;
+}
+.animations img:nth-child(6){
+	animation-delay:- 4.6s;
+}
+.animations img:nth-child(7){
+	animation-delay: -4.2s;
+}
